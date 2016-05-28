@@ -86,7 +86,8 @@ Environment::ActionType Player::Think(){
     const int PROFUNDIDAD_MINIMAX = 6;  // Umbral maximo de profundidad para el metodo MiniMax
     const int PROFUNDIDAD_ALFABETA = 8; // Umbral maximo de profundidad para la poda Alfa_Beta
 
-    Environment::ActionType accion; // acciï¿½n que se va a devolver
+
+    Environment::ActionType accion; // acción que se va a devolver
     bool aplicables[8]; // Vector bool usado para obtener las acciones que son aplicables en el estado actual. La interpretacion es
                         // aplicables[0]==true si PUT1 es aplicable
                         // aplicables[1]==true si PUT2 es aplicable
@@ -180,5 +181,5 @@ double Player::Practicar(const Environment& T, int jugador, int prof,
  * if(prof == limite)
  * si prof %2 == 0 -> max
  * si prof %2 == 0 -> min
- * Es una implementaciÃ³n parecida, pero hay que tener en cuenta que el mÃ©todo sÃ³lo maximiza, no minimiza
+ * Es una implementación parecida, pero hay que tener en cuenta que el método lo maximiza, no minimiza
  */
